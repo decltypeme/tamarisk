@@ -26,12 +26,11 @@ void dfs(struct task_struct *inTask)
   struct task_struct *task;
   struct list_head *list;
 
+  pr_info("[%d]\t\t%s\t\t%ld\n", inTask->pid, inTask->comm, inTask->state);
+
   list_for_each(list, &inTask->children) {
     task = list_entry(list, struct task_struct, sibling);
-
-  pr_info("[%d]\t%s\t%ld\n", inTask->pid, inTask->comm, inTask->state);
-
-  dfs(task);
+    dfs(task);
 }
 }
 
@@ -39,7 +38,7 @@ static int __init listdfs_init(void)
 {
     //Print some message
     pr_info("tamarisk-dfs module is initializing..\n");
-
+    pr_info("pid \t\t pname \t\t state\n");
     dfs(&init_task);
 
     return 0;

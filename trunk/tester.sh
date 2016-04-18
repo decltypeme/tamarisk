@@ -10,7 +10,7 @@ dmesg > ../tamarisk-all.test
 cd ..
 
 #Testing of tamarisk-dfs
-cd tamarisk-all
+cd tamarisk-dfs
 make clean
 make all
 dmesg -C

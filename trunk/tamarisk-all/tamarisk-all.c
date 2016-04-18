@@ -26,9 +26,9 @@ static int __init listall_init(void)
     pr_info("tamarisk-all module is initializing..\n");
 
     struct task_struct *task;
-    pr_info("pid \t pname \t state\n");
+    pr_info("pid \t\t pname \t\t state\n");
     for_each_process(task)
-        pr_info("[%d]\t%s\t%ld\n", task->pid, task->comm, task->state);
+        pr_info("[%d]\t\t%s\t\t%ld\n", task->pid, task->comm, task->state);
 
     return 0;
 }
