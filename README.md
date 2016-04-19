@@ -23,8 +23,6 @@ Linux kernel module for listing processes
 ```
 ### Configurations
 
-***Still in progress***
-
 For the modules tamarisk-all and tamarisk-dfs, we give the option to translate the state to a readable string. You can change it by setting the following configuration in the header in ``includes/printer.h``
 
 As you know, "(programmers) provide enough to satisfy [every] (user)'s needs, but not [every] (user)'s greed." - Mahatma Gandhi after shifting careers.
