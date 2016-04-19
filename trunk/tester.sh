@@ -6,8 +6,8 @@ dmesg -C
 ps -el > ../ps-all.test
 insmod tamarisk-all.ko
 rmmod tamarisk-all.ko
-dmesg > ../tamarisk-all.test
 cd ..
+dmesg > tamarisk-all.test
 
 #Testing of tamarisk-dfs
 cd tamarisk-dfs
@@ -17,5 +17,6 @@ dmesg -C
 ps -eLf > ../ps-dfs.test
 insmod tamarisk-dfs.ko
 rmmod tamarisk-dfs.ko
-dmesg > ../tamarisk-dfs.test
+cd ..
+dmesg > tamarisk-dfs.test
 dmesg -C
