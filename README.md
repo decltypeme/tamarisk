@@ -17,9 +17,9 @@ Linux kernel module for listing processes
     ├── tamarisk-digraph
     │   ├── Makefile
     │   └── tamarisk-digraph.c
+    ├── cleaner.sh
     ├── tamarisk-visualize.sh
     └── tester.sh
-    └── cleaner.sh
 ```
 ### Configurations
 
