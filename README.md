@@ -19,7 +19,7 @@ Linux kernel module for listing processes
     │   └── tamarisk-digraph.c
     ├── tamarisk-visualize.sh
     └── tester.sh
-
+    └── cleaner.sh
 ```
 ### Configurations
 
