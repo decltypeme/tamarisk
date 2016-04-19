@@ -1,5 +1,5 @@
 /*
- * semsem is a Linux kernel module for listing processes
+ * tamarisk is a Linux kernel module for listing processes
  * Written by: Islam Faisal (decltypeme)
  * The American University in Cairo
  * For License, please see LICENSE
@@ -21,16 +21,16 @@
 #include <linux/sched.h>
 #include <linux/init.h>
 
-void dfs(struct task_struct *inTask)
+void dfs_tasks(struct task_struct *task)
 {
-  struct task_struct *task;
+  struct task_struct *tast_ptr;
   struct list_head *list;
 
-  pr_info("[%d]\t\t%s\t\t%ld\n", inTask->pid, inTask->comm, inTask->state);
+  #include "../includes/printer.h"
 
-  list_for_each(list, &inTask->children) {
-    task = list_entry(list, struct task_struct, sibling);
-    dfs(task);
+  list_for_each(list, &task->children) {
+    tast_ptr = list_entry(list, struct task_struct, sibling);
+    dfs_tasks(tast_ptr);
 }
 }
 
@@ -39,7 +39,7 @@ static int __init listdfs_init(void)
     //Print some message
     pr_info("tamarisk-dfs module is initializing..\n");
     pr_info("pid \t\t pname \t\t state\n");
-    dfs(&init_task);
+    dfs_tasks(&init_task);
 
     return 0;
 }

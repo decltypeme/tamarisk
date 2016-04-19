@@ -1,5 +1,5 @@
 /*
- * semsem is a Linux kernel module for listing processes
+ * tamarisk is a Linux kernel module for listing processes
  * Written by: Islam Faisal (decltypeme)
  * The American University in Cairo
  * For License, please see LICENSE
@@ -28,7 +28,7 @@ static int __init listall_init(void)
     struct task_struct *task;
     pr_info("pid \t\t pname \t\t state\n");
     for_each_process(task)
-        pr_info("[%d]\t\t%s\t\t%ld\n", task->pid, task->comm, task->state);
+          #include "../includes/printer.h"
 
     return 0;
 }

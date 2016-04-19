@@ -1,5 +1,5 @@
 /*
- * semsem is a Linux kernel module for listing processes
+ * tamarisk is a Linux kernel module for listing processes
  * Written by: Islam Faisal (decltypeme)
  * The American University in Cairo
  * For License, please see LICENSE
