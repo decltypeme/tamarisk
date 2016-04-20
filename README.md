@@ -32,7 +32,7 @@ Preprocessor | Effect
 STATE_STRING | Print the state as a readable string
 
 ### tamarisk-all
-A module to list all tasks linearly. To use the module, you can either run the **tester.sh$$ or run this code when in tamarisk-all. Please run these commands with administrator privileges.
+A module to list all tasks linearly. To use the module, you can either run the **tester.sh** or run this code when in tamarisk-all. Please run these commands with administrator privileges.
 ```
 make clean
 make all
@@ -47,7 +47,7 @@ Whenever you want to clean the directory from the built files, please run this c
 sudo make clean
 ```
 ### tamarisk-dfs
-A module to list all tasks in a DFS manner. To use the module, you can either run the **tester.sh$$ or run this code when in tamarisk-dfs. Please run these commands with administrator privileges.
+A module to list all tasks in a DFS manner. To use the module, you can either run the **tester.sh** or run this code when in tamarisk-dfs. Please run these commands with administrator privileges.
 ```
 make clean
 make all
